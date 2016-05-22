@@ -1,4 +1,5 @@
 class StudentDecorator < BaseDecorator
+  include ActionView::Helpers::NumberHelper
   def full_name
     "#{first_name} #{last_name}"
   end
